@@ -6,4 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    border: none;
+    scroll-behavior: smooth;
+    outline: none;
 }
