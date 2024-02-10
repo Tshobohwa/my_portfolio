@@ -22,3 +22,38 @@ html {
     font-size: 62.5%;
     overflow: hidden;
 }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    padding-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
