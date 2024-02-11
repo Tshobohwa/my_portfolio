@@ -1,3 +1,12 @@
+// ========================== toggle navbar hamburger button ==========================
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+})
+
 // ========================== scroll section active links ==========================
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -17,10 +26,16 @@ window.onscroll = () => {
         }
     })
 
+
     // ========================== sticky header ==========================
 
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrollY > 100);
+
+    // ========================== remove navbar on navlink click ==========================
+
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 
 }
