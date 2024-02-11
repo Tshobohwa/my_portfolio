@@ -101,6 +101,21 @@ span {
 
 .home-img img {
     width: 35vw;
+    animation: floatingImage 4s ease-in-out infinite;
+}
+
+@keyframes floatingImage {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .home-content p {
