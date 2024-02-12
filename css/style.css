@@ -306,10 +306,10 @@ span {
     background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 2rem 4rem;
     transform: translateY(100%);
     transition: .5s ease;
 }
@@ -326,10 +326,14 @@ span {
 .portfolio-box .portfolio-layer p {
     font-size: 1.6rem;
 }
+.portfolio-box .portfolio-layer a p {
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    margin-left: 1rem;
+}
 
 .portfolio-layer .links-container {
     width: 100%;
-    padding:0 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -338,10 +342,10 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
     height: 5rem;
+    width: 45%;
     background-color: var(--text-color);
-    border-radius: 50%;
+    border-radius: 2rem;
 }
 
 .portfolio-box .portfolio-layer a i {
