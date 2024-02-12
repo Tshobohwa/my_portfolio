@@ -100,16 +100,22 @@ span {
 }
 
 .home-img, .about-img {
-        aspect-ratio: 1;
-        border-radius: 20%;
-        box-shadow: 0 0 1rem var(--main-color);
-        overflow: hidden;
-        background-color: var(--main-color);
-        animation: floatingImage 4s ease-in-out infinite;
-    }
+    border-radius: 20%;
+    box-shadow: 0 0 1rem var(--main-color);
+    overflow: hidden;
+    background-color: var(--main-color);
+    animation: floatingImage 4s ease-in-out infinite;
+    margin: 2rem;
+}
 
-.home-img img {
-    width: 35vw;
+.home-img {
+    width: 50vw;
+}
+
+.home-img img, .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @keyframes floatingImage {
@@ -227,6 +233,16 @@ span {
     border-color: var(--main-color);
 }
 
+.service-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-img img {
+    width: 30%;
+}
 
 .services-box i {
     font-size: 7rem;
